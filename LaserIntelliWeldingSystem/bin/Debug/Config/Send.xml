@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Ext>
+  <Pos>
+    <XPos>1.23</XPos>
+	<YPos>1.23</YPos>
+	<ZPos>1.23</ZPos>
+  </Pos>
+  <Robot>
+    <IsCor>0</IsCor>
+	<LaserPower>3000</LaserPower>
+	<Speed>50</Speed>
+  </Robot>
+</Ext>

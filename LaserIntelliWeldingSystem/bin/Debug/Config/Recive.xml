@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Ext>
+  <Pos>
+    <XPos>1.23</XPos>
+	<YPos>1.23</YPos>
+	<ZPos>1.23</ZPos>
+  </Pos>
+  <Robot>
+	<LaserPower>3000</LaserPower>
+	<Speed>50</Speed>
+	<Feedspeed>3000</Feedspeed>
+  </Robot>
+  <Offset>
+	<OY>1.23</OY>
+	<OZ>1.23</OZ>
+  </Offset>
+  <SeamData>
+	<PointNum>6</PointNum>
+	<WidthStartNum>2</WidthStartNum>
+	<WidthEndNum>4</WidthEndNum>
+	<PointX>2,3,4,5,6,7</PointX>
+	<PointY>12,12,10,8,17,17</PointY>
+  </SeamData>
+</Ext>

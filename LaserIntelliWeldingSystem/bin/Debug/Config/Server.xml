@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ETHERNETKRL>
+  <CONFIGURATION>
+    <INTERNAL>
+      <IP>172.31.1.147</IP>
+      <!-- 机器人控制系统作为服务器的 IP 地址 -->
+      <PORT>54600</PORT>
+      <!-- 机器人控制系统作为服务器的端口号 -->
+      <ALIVE Set_Flag="1" />
+      <!-- 建立连接时，flag 1 将置位 -->
+    </INTERNAL>
+  </CONFIGURATION>
+  <RECEIVE>
+    <XML>
+      <ELEMENT Tag="Ext/Pos/XPos" Type="STRING" Set_Flag="2" />
+	  <ELEMENT Tag="Ext/Pos/YPos" Type="STRING" Set_Flag="2" />
+	  <ELEMENT Tag="Ext/Pos/ZPos" Type="STRING" Set_Flag="2" />
+	  <ELEMENT Tag="Ext/Robot/IsCor" Type="STRING" Set_Flag="2" />
+	  <ELEMENT Tag="Ext/Robot/LaserPower" Type="STRING" Set_Flag="2" />
+	  <ELEMENT Tag="Ext/Robot/Speed" Type="STRING" Set_Flag="2" />
+    </XML>
+  </RECEIVE>
+  <SEND>
+    <XML>
+       <ELEMENT Tag="Ext/Pos/XPos" Type="STRING" Set_Flag="2" />
+	  <ELEMENT Tag="Ext/Pos/YPos" Type="STRING" Set_Flag="2" />
+	  <ELEMENT Tag="Ext/Pos/ZPos" Type="STRING" Set_Flag="2" />
+	  <ELEMENT Tag="Ext/Robot/LaserPower" Type="STRING" Set_Flag="2" />
+	  <ELEMENT Tag="Ext/Robot/Speed" Type="STRING" Set_Flag="2" />
+	  <ELEMENT Tag="Ext/Offset/OY" Type="STRING" Set_Flag="2" />
+	  <ELEMENT Tag="Ext/Offset/OZ" Type="STRING" Set_Flag="2" />
+	  <ELEMENT Tag="Ext/SeamData/PointNum" Type="STRING" Set_Flag="2" />
+	  <ELEMENT Tag="Ext/SeamData/WidthStartNum" Type="STRING" Set_Flag="2" />
+	  <ELEMENT Tag="Ext/SeamData/WidthEndNum" Type="STRING" Set_Flag="2" />
+	  <ELEMENT Tag="Ext/SeamData/PointX" Type="STRING" Set_Flag="2" />
+	  <ELEMENT Tag="Ext/SeamData/PointY" Type="STRING" Set_Flag="2" />
+    </XML>
+  </SEND>
+</ETHERNETKRL>

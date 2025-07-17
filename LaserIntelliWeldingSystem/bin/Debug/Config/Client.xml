@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ETHERNETKRL>
+  <CONFIGURATION>
+    <EXTERNAL>
+      <!-- 确定外部系统是作为服务器还是客户端与机器人控制系统通讯（可选）。
+			* Server：外部系统是服务器。
+			* Client：外部系统是客户端。
+			默认值：Server -->
+      <TYPE>Client</TYPE>
+      <IP>127.0.0.1</IP>
+      <!-- TYPE = Client 时，将忽略 EXTERNAL 段中的 IP 地址和端口号 -->
+      <PORT>59152</PORT>
+      <!-- TYPE = Client 时，将忽略 EXTERNAL 段中的 IP 地址和端口号 -->
+    </EXTERNAL>
+    <INTERNAL>
+      <IP>172.31.1.147</IP>
+      <!-- 机器人控制系统作为服务器的 IP 地址 -->
+      <PORT>54600</PORT>
+      <!-- 机器人控制系统作为服务器的端口号 -->
+      <ALIVE Set_Flag="1" />
+      <!-- 建立连接时，flag 1 将置位 -->
+    </INTERNAL>
+  </CONFIGURATION>
+  </ETHERNETKRL>
