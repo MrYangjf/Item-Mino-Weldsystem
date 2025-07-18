@@ -5,3 +5,5 @@
 界面SunnyUI集成；
 通讯STTech的TCP/IP通讯；
 其余依赖引用公共Nuget；
+
+工艺模型第一次建立时间0718

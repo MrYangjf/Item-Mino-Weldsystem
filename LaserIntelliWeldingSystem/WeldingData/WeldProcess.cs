@@ -7,6 +7,7 @@ using System.Linq;
 using System.Runtime.ConstrainedExecution;
 using System.Text;
 using System.Threading.Tasks;
+using static LaserIntelliWeldingSystem.PageUI.MainPage;
 
 namespace LaserIntelliWeldingSystem.WeldingData
 {
@@ -78,8 +79,6 @@ namespace LaserIntelliWeldingSystem.WeldingData
             Width = GetWidth();
             return true;
         }
-
-
         double GetWidth()
         {
             double w = 0;
@@ -104,7 +103,6 @@ namespace LaserIntelliWeldingSystem.WeldingData
             FeedSpeed = 0;
             Speed = 0;
         }
-
         public bool SetData(string RoVer, string FeedVer, string Power)
         {
             if (!double.TryParse(RoVer, out Speed)) return false;
@@ -130,7 +128,6 @@ namespace LaserIntelliWeldingSystem.WeldingData
 
     public class AutoParam
     {
-
         public SeamType WeldType;
 
         public string identityInfo;
@@ -147,13 +144,11 @@ namespace LaserIntelliWeldingSystem.WeldingData
         public double RobotSpeed;
         public double SeamWidthMax;
         public double SeamWidthMin;
-        public double Sensitivity
-;
+        public double Sensitivity;
 
         public double KVar;
         public double JVar;
         public double MVar;
-
 
         public AutoParam(string identity, DateTime creatTime)
         {
@@ -173,32 +168,35 @@ namespace LaserIntelliWeldingSystem.WeldingData
             WeldType = 0;
         }
 
-
         public void CalVar()
         {
             KVar = ((3.14 / 4) * WireDiameter * WireDiameter * FeedSpeed) / (Platethickness * SeamWidth * RobotSpeed);
             JVar = (MVar * LaserPower) / ((3.14 / 4) * WireDiameter * WireDiameter * FeedSpeed);
         }
-
     }
 
     public class LaserSeamData
     {
         public RobotWeldData robotWeldData;
         public LaserWeldData laserWeldData;
-
-
         public LaserSeamData()
         {
             robotWeldData = new RobotWeldData();
             laserWeldData = new LaserWeldData();
         }
 
-
     }
 
     public class WeldProcess
     {
+        public bool Trigger;
+        public double StartRobotX;
+        public double CurrentSeamWidth;
+
+        public double FeedSpeedOutput;
+        public double RobotSpeedOutput;
+        public double LaserPowerOutput;
+
         private static WeldProcess instance = null;
 
         private WeldProcess() { }
@@ -230,6 +228,58 @@ namespace LaserIntelliWeldingSystem.WeldingData
         public Dictionary<double, double> FeedSpeedDic = new Dictionary<double, double>();
         public Dictionary<double, double> RobotSpeedDic = new Dictionary<double, double>();
 
+        public void AutoAction(AutoParam mAutoParam, ChartVar SeamWidthLine, bool IsCountType, int CountNum)
+        {
+            //设定执行宽度值，第一次输入为焊缝当前基准
+            //输入连续的宽度值，计算最后整体长度（以某个值定义为一段）：批图5个点或距离5mm生成一段焊缝款
+            //比较整体变化（避免摸一个点变化影响）：A段宽 B段宽 C段宽
+            //若A段大于B段宽 某个值（自动调整参数的灵敏值）  判定为焊缝产生了突变
+            //产生突变的X（机器人坐标）去对应自动调整参数
+            //假如示例为Input Array {"4"，"4"，"4"，"5"，"6"，"7"，"7"，"7"，"7"，"7"，"4"，"4"，"4"，"4"}
+            if (IsCountType && SeamWidthLine != null)
+            {
+                if (SeamWidthLine.Count() < CountNum) CurrentSeamWidth = mAutoParam.SeamWidth;
+                else
+                {
+                    StartRobotX = SeamWidthLine.X[SeamWidthLine.X.Count - CountNum];
+                    List<double> CountSeamWidth = SeamWidthLine.Y.GetRange(SeamWidthLine.Y.Count - CountNum, CountNum);
+                    double Temp = CountSeamWidth.Average();
+                    if (Math.Abs((Temp - CurrentSeamWidth)) > mAutoParam.Sensitivity && !Trigger)
+                    {
+                        Trigger = true;
+                        CurrentSeamWidth = Temp;
+
+                        double FindSeamWidth = -1;
+                        double DiffTemp = 100;
+                        for (int i = 0; i < SeamWidthList.Count; i++)
+                        {
+                            double DiffAbs = Math.Abs(CurrentSeamWidth - SeamWidthList[i]);
+                            if (DiffAbs <= DiffTemp)
+                            {
+                                DiffTemp = DiffAbs;
+                                FindSeamWidth = SeamWidthList[i];
+                            }
+
+                        }
+                        if (FindSeamWidth != -1)
+                        {
+                            FeedSpeedOutput = FeedSpeedDic[FindSeamWidth];
+                            RobotSpeedOutput = RobotSpeedDic[FindSeamWidth];
+                            LaserPowerOutput = LaserPowerDic[FindSeamWidth];
+                        }
+                        else
+                        {
+                            Trigger = false;
+                        }
+
+                    }
+                }
+            }
+            else
+            {
+
+            }
+        }
 
         public double FeedSpeedCal(AutoParam mAutoParam, double mRobotSpeed, double mSeamWidth)
         {
@@ -252,8 +302,8 @@ namespace LaserIntelliWeldingSystem.WeldingData
             LaserPowerDic = new Dictionary<double, double>();
             FeedSpeedDic = new Dictionary<double, double>();
             RobotSpeedDic = new Dictionary<double, double>();
-            int ArrayAddCount = (int)(Math.Truncate((mAutoParam.SeamWidthMax - mAutoParam.SeamWidth) / mAutoParam.Sensitivity) + 1);
-            int ArrayInclineCount = (int)(Math.Truncate((mAutoParam.SeamWidth - mAutoParam.SeamWidthMin) / mAutoParam.Sensitivity) + 1);
+            int ArrayAddCount = (int)(Math.Truncate((mAutoParam.SeamWidthMax - mAutoParam.SeamWidth) / mAutoParam.Sensitivity) + 2);
+            int ArrayInclineCount = (int)(Math.Truncate((mAutoParam.SeamWidth - mAutoParam.SeamWidthMin) / mAutoParam.Sensitivity) + 2);
             for (int i = 0; i < ArrayAddCount; i++)
             {
                 double SeamWidthValue = mAutoParam.SeamWidth + i * mAutoParam.Sensitivity;

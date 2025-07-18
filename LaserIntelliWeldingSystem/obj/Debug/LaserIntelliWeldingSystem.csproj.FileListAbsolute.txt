@@ -97,3 +97,25 @@ D:\A-A-项目类\04_研发项目\MRDF-2519 智能钎焊系统\M4\软件开发\La
 D:\A-A-项目类\04_研发项目\MRDF-2519 智能钎焊系统\M4\软件开发\LaserIntelliWeldingSystem\LaserIntelliWeldingSystem\obj\Debug\LaserIntelliWeldingSystem.pdb
 D:\A-A-项目类\04_研发项目\MRDF-2519 智能钎焊系统\M4\软件开发\LaserIntelliWeldingSystem\LaserIntelliWeldingSystem\obj\Debug\LaserIntelliWeldingSystem.UI.ConfigForm.resources
 D:\A-A-项目类\04_研发项目\MRDF-2519 智能钎焊系统\M4\软件开发\LaserIntelliWeldingSystem\LaserIntelliWeldingSystem\obj\Debug\LaserIntelliWeldingSystem.UI.AutoValueForm.resources
+E:\SoftwareGit\LaserIntelliWeldingSystem\LaserIntelliWeldingSystem\bin\Debug\LaserIntelliWeldingSystem.exe.config
+E:\SoftwareGit\LaserIntelliWeldingSystem\LaserIntelliWeldingSystem\bin\Debug\LaserIntelliWeldingSystem.exe
+E:\SoftwareGit\LaserIntelliWeldingSystem\LaserIntelliWeldingSystem\bin\Debug\LaserIntelliWeldingSystem.pdb
+E:\SoftwareGit\LaserIntelliWeldingSystem\LaserIntelliWeldingSystem\obj\Debug\LaserIntelliWeldingSystem.csproj.AssemblyReference.cache
+E:\SoftwareGit\LaserIntelliWeldingSystem\LaserIntelliWeldingSystem\obj\Debug\LaserIntelliWeldingSystem.UI.AutoValueForm.resources
+E:\SoftwareGit\LaserIntelliWeldingSystem\LaserIntelliWeldingSystem\obj\Debug\LaserIntelliWeldingSystem.UI.ConfigForm.resources
+E:\SoftwareGit\LaserIntelliWeldingSystem\LaserIntelliWeldingSystem\obj\Debug\LaserIntelliWeldingSystem.UI.EditPassword.resources
+E:\SoftwareGit\LaserIntelliWeldingSystem\LaserIntelliWeldingSystem\obj\Debug\LaserIntelliWeldingSystem.PageUI.DataReview.resources
+E:\SoftwareGit\LaserIntelliWeldingSystem\LaserIntelliWeldingSystem\obj\Debug\LaserIntelliWeldingSystem.UI.ParamAutoPage.resources
+E:\SoftwareGit\LaserIntelliWeldingSystem\LaserIntelliWeldingSystem\obj\Debug\LaserIntelliWeldingSystem.UI.PCLPage.resources
+E:\SoftwareGit\LaserIntelliWeldingSystem\LaserIntelliWeldingSystem\obj\Debug\LaserIntelliWeldingSystem.UI.TCPClinet.resources
+E:\SoftwareGit\LaserIntelliWeldingSystem\LaserIntelliWeldingSystem\obj\Debug\LaserIntelliWeldingSystem.FileIO.XMLFile.XMLEditor.resources
+E:\SoftwareGit\LaserIntelliWeldingSystem\LaserIntelliWeldingSystem\obj\Debug\LaserIntelliWeldingSystem.FormMain.resources
+E:\SoftwareGit\LaserIntelliWeldingSystem\LaserIntelliWeldingSystem\obj\Debug\LaserIntelliWeldingSystem.UI.FormLogin.resources
+E:\SoftwareGit\LaserIntelliWeldingSystem\LaserIntelliWeldingSystem\obj\Debug\LaserIntelliWeldingSystem.PageUI.MainPage.resources
+E:\SoftwareGit\LaserIntelliWeldingSystem\LaserIntelliWeldingSystem\obj\Debug\LaserIntelliWeldingSystem.PageUI.ParamPage.resources
+E:\SoftwareGit\LaserIntelliWeldingSystem\LaserIntelliWeldingSystem\obj\Debug\LaserIntelliWeldingSystem.Properties.Resources.resources
+E:\SoftwareGit\LaserIntelliWeldingSystem\LaserIntelliWeldingSystem\obj\Debug\LaserIntelliWeldingSystem.UI.TCPServer.resources
+E:\SoftwareGit\LaserIntelliWeldingSystem\LaserIntelliWeldingSystem\obj\Debug\LaserIntelliWeldingSystem.csproj.GenerateResource.cache
+E:\SoftwareGit\LaserIntelliWeldingSystem\LaserIntelliWeldingSystem\obj\Debug\LaserIntelliWeldingSystem.csproj.CoreCompileInputs.cache
+E:\SoftwareGit\LaserIntelliWeldingSystem\LaserIntelliWeldingSystem\obj\Debug\LaserIntelliWeldingSystem.exe
+E:\SoftwareGit\LaserIntelliWeldingSystem\LaserIntelliWeldingSystem\obj\Debug\LaserIntelliWeldingSystem.pdb

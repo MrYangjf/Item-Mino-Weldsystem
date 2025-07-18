@@ -3,6 +3,7 @@ using LaserIntelliWeldingSystem.FileIO.LOGFile;
 using LaserIntelliWeldingSystem.FileIO.XMLFile;
 using LaserIntelliWeldingSystem.PCL;
 using LaserIntelliWeldingSystem.SQLiteDB;
+using LaserIntelliWeldingSystem.WeldingData;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -63,6 +64,7 @@ namespace LaserIntelliWeldingSystem.Communication
 
         public static string Xpos, Ypos, Zpos, OffsetY, OffsetZ, LaserPower, FeedSpeed, Speed, PointNum, WidthStartNum, WidthEndNum, PointsX, PointsY;
 
+        public static AutoParam mAutoParam;
 
         /// <summary>
         /// 服务器xml文档

@@ -1,13 +1,33 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\A-A-\u9879\u76EE\u7C7B\\04_\u7814\u53D1\u9879\u76EE\\MRDF-2519 \u667A\u80FD\u948E\u710A\u7CFB\u7EDF\\M4\\\u8F6F\u4EF6\u5F00\u53D1\\LaserIntelliWeldingSystem\\",
+  "WorkspaceRootPath": "E:\\SoftwareGit\\LaserIntelliWeldingSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9DEDB4FB-DBD9-40B7-9087-F3052F82512E}|LaserIntelliWeldingSystem\\LaserIntelliWeldingSystem.csproj|d:\\a-a-\u9879\u76EE\u7C7B\\04_\u7814\u53D1\u9879\u76EE\\mrdf-2519 \u667A\u80FD\u948E\u710A\u7CFB\u7EDF\\m4\\\u8F6F\u4EF6\u5F00\u53D1\\laserintelliweldingsystem\\laserintelliweldingsystem\\weldingdata\\weldprocess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9DEDB4FB-DBD9-40B7-9087-F3052F82512E}|LaserIntelliWeldingSystem\\LaserIntelliWeldingSystem.csproj|e:\\softwaregit\\laserintelliweldingsystem\\laserintelliweldingsystem\\weldingdata\\weldprocess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9DEDB4FB-DBD9-40B7-9087-F3052F82512E}|LaserIntelliWeldingSystem\\LaserIntelliWeldingSystem.csproj|solutionrelative:laserintelliweldingsystem\\weldingdata\\weldprocess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9DEDB4FB-DBD9-40B7-9087-F3052F82512E}|LaserIntelliWeldingSystem\\LaserIntelliWeldingSystem.csproj|D:\\A-A-\u9879\u76EE\u7C7B\\04_\u7814\u53D1\u9879\u76EE\\MRDF-2519 \u667A\u80FD\u948E\u710A\u7CFB\u7EDF\\M4\\\u8F6F\u4EF6\u5F00\u53D1\\LaserIntelliWeldingSystem\\laserintelliweldingsystem\\ui\\paramautopage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{9DEDB4FB-DBD9-40B7-9087-F3052F82512E}|LaserIntelliWeldingSystem\\LaserIntelliWeldingSystem.csproj|e:\\softwaregit\\laserintelliweldingsystem\\laserintelliweldingsystem\\ui\\editpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9DEDB4FB-DBD9-40B7-9087-F3052F82512E}|LaserIntelliWeldingSystem\\LaserIntelliWeldingSystem.csproj|solutionrelative:laserintelliweldingsystem\\ui\\editpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9DEDB4FB-DBD9-40B7-9087-F3052F82512E}|LaserIntelliWeldingSystem\\LaserIntelliWeldingSystem.csproj|e:\\softwaregit\\laserintelliweldingsystem\\laserintelliweldingsystem\\ui\\datareview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9DEDB4FB-DBD9-40B7-9087-F3052F82512E}|LaserIntelliWeldingSystem\\LaserIntelliWeldingSystem.csproj|solutionrelative:laserintelliweldingsystem\\ui\\datareview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9DEDB4FB-DBD9-40B7-9087-F3052F82512E}|LaserIntelliWeldingSystem\\LaserIntelliWeldingSystem.csproj|e:\\softwaregit\\laserintelliweldingsystem\\laserintelliweldingsystem\\ui\\configform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9DEDB4FB-DBD9-40B7-9087-F3052F82512E}|LaserIntelliWeldingSystem\\LaserIntelliWeldingSystem.csproj|solutionrelative:laserintelliweldingsystem\\ui\\configform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9DEDB4FB-DBD9-40B7-9087-F3052F82512E}|LaserIntelliWeldingSystem\\LaserIntelliWeldingSystem.csproj|e:\\softwaregit\\laserintelliweldingsystem\\laserintelliweldingsystem\\ui\\autovalueform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9DEDB4FB-DBD9-40B7-9087-F3052F82512E}|LaserIntelliWeldingSystem\\LaserIntelliWeldingSystem.csproj|solutionrelative:laserintelliweldingsystem\\ui\\autovalueform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9DEDB4FB-DBD9-40B7-9087-F3052F82512E}|LaserIntelliWeldingSystem\\LaserIntelliWeldingSystem.csproj|e:\\softwaregit\\laserintelliweldingsystem\\laserintelliweldingsystem\\ui\\mainpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9DEDB4FB-DBD9-40B7-9087-F3052F82512E}|LaserIntelliWeldingSystem\\LaserIntelliWeldingSystem.csproj|solutionrelative:laserintelliweldingsystem\\ui\\mainpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9DEDB4FB-DBD9-40B7-9087-F3052F82512E}|LaserIntelliWeldingSystem\\LaserIntelliWeldingSystem.csproj|E:\\SoftwareGit\\LaserIntelliWeldingSystem\\laserintelliweldingsystem\\ui\\paramautopage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{9DEDB4FB-DBD9-40B7-9087-F3052F82512E}|LaserIntelliWeldingSystem\\LaserIntelliWeldingSystem.csproj|solutionrelative:laserintelliweldingsystem\\ui\\paramautopage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -18,29 +38,88 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EditPassword.cs [\u8BBE\u8BA1]",
+              "DocumentMoniker": "E:\\SoftwareGit\\LaserIntelliWeldingSystem\\LaserIntelliWeldingSystem\\UI\\EditPassword.cs",
+              "RelativeDocumentMoniker": "LaserIntelliWeldingSystem\\UI\\EditPassword.cs",
+              "ToolTip": "E:\\SoftwareGit\\LaserIntelliWeldingSystem\\LaserIntelliWeldingSystem\\UI\\EditPassword.cs [\u8BBE\u8BA1]",
+              "RelativeToolTip": "LaserIntelliWeldingSystem\\UI\\EditPassword.cs [\u8BBE\u8BA1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T02:37:19.854Z",
+              "EditorCaption": " [\u8BBE\u8BA1]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DataReview.cs [\u8BBE\u8BA1]",
+              "DocumentMoniker": "E:\\SoftwareGit\\LaserIntelliWeldingSystem\\LaserIntelliWeldingSystem\\UI\\DataReview.cs",
+              "RelativeDocumentMoniker": "LaserIntelliWeldingSystem\\UI\\DataReview.cs",
+              "ToolTip": "E:\\SoftwareGit\\LaserIntelliWeldingSystem\\LaserIntelliWeldingSystem\\UI\\DataReview.cs [\u8BBE\u8BA1]",
+              "RelativeToolTip": "LaserIntelliWeldingSystem\\UI\\DataReview.cs [\u8BBE\u8BA1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T02:37:18.288Z",
+              "EditorCaption": " [\u8BBE\u8BA1]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ConfigForm.cs [\u8BBE\u8BA1]",
+              "DocumentMoniker": "E:\\SoftwareGit\\LaserIntelliWeldingSystem\\LaserIntelliWeldingSystem\\UI\\ConfigForm.cs",
+              "RelativeDocumentMoniker": "LaserIntelliWeldingSystem\\UI\\ConfigForm.cs",
+              "ToolTip": "E:\\SoftwareGit\\LaserIntelliWeldingSystem\\LaserIntelliWeldingSystem\\UI\\ConfigForm.cs [\u8BBE\u8BA1]",
+              "RelativeToolTip": "LaserIntelliWeldingSystem\\UI\\ConfigForm.cs [\u8BBE\u8BA1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T02:37:17.129Z",
+              "EditorCaption": " [\u8BBE\u8BA1]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AutoValueForm.cs [\u8BBE\u8BA1]",
+              "DocumentMoniker": "E:\\SoftwareGit\\LaserIntelliWeldingSystem\\LaserIntelliWeldingSystem\\UI\\AutoValueForm.cs",
+              "RelativeDocumentMoniker": "LaserIntelliWeldingSystem\\UI\\AutoValueForm.cs",
+              "ToolTip": "E:\\SoftwareGit\\LaserIntelliWeldingSystem\\LaserIntelliWeldingSystem\\UI\\AutoValueForm.cs [\u8BBE\u8BA1]",
+              "RelativeToolTip": "LaserIntelliWeldingSystem\\UI\\AutoValueForm.cs [\u8BBE\u8BA1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T02:37:14.712Z",
+              "EditorCaption": " [\u8BBE\u8BA1]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MainPage.cs [\u8BBE\u8BA1]",
+              "DocumentMoniker": "E:\\SoftwareGit\\LaserIntelliWeldingSystem\\LaserIntelliWeldingSystem\\UI\\MainPage.cs",
+              "RelativeDocumentMoniker": "LaserIntelliWeldingSystem\\UI\\MainPage.cs",
+              "ToolTip": "E:\\SoftwareGit\\LaserIntelliWeldingSystem\\LaserIntelliWeldingSystem\\UI\\MainPage.cs [\u8BBE\u8BA1]",
+              "RelativeToolTip": "LaserIntelliWeldingSystem\\UI\\MainPage.cs [\u8BBE\u8BA1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T02:36:48.327Z",
+              "EditorCaption": " [\u8BBE\u8BA1]"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "WeldProcess.cs",
-              "DocumentMoniker": "D:\\A-A-\u9879\u76EE\u7C7B\\04_\u7814\u53D1\u9879\u76EE\\MRDF-2519 \u667A\u80FD\u948E\u710A\u7CFB\u7EDF\\M4\\\u8F6F\u4EF6\u5F00\u53D1\\LaserIntelliWeldingSystem\\LaserIntelliWeldingSystem\\WeldingData\\WeldProcess.cs",
+              "DocumentMoniker": "E:\\SoftwareGit\\LaserIntelliWeldingSystem\\LaserIntelliWeldingSystem\\WeldingData\\WeldProcess.cs",
               "RelativeDocumentMoniker": "LaserIntelliWeldingSystem\\WeldingData\\WeldProcess.cs",
-              "ToolTip": "D:\\A-A-\u9879\u76EE\u7C7B\\04_\u7814\u53D1\u9879\u76EE\\MRDF-2519 \u667A\u80FD\u948E\u710A\u7CFB\u7EDF\\M4\\\u8F6F\u4EF6\u5F00\u53D1\\LaserIntelliWeldingSystem\\LaserIntelliWeldingSystem\\WeldingData\\WeldProcess.cs",
+              "ToolTip": "E:\\SoftwareGit\\LaserIntelliWeldingSystem\\LaserIntelliWeldingSystem\\WeldingData\\WeldProcess.cs",
               "RelativeToolTip": "LaserIntelliWeldingSystem\\WeldingData\\WeldProcess.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAMoAAAAAAAAA",
+              "ViewState": "AQIAAAwBAAAAAAAAAAAowMoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-17T02:35:31.73Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "ParamAutoPage.cs [\u8BBE\u8BA1]",
-              "DocumentMoniker": "D:\\A-A-\u9879\u76EE\u7C7B\\04_\u7814\u53D1\u9879\u76EE\\MRDF-2519 \u667A\u80FD\u948E\u710A\u7CFB\u7EDF\\M4\\\u8F6F\u4EF6\u5F00\u53D1\\LaserIntelliWeldingSystem\\LaserIntelliWeldingSystem\\UI\\ParamAutoPage.cs",
+              "DocumentMoniker": "E:\\SoftwareGit\\LaserIntelliWeldingSystem\\LaserIntelliWeldingSystem\\UI\\ParamAutoPage.cs",
               "RelativeDocumentMoniker": "LaserIntelliWeldingSystem\\UI\\ParamAutoPage.cs",
               "ToolTip": "D:\\A-A-\u9879\u76EE\u7C7B\\04_\u7814\u53D1\u9879\u76EE\\MRDF-2519 \u667A\u80FD\u948E\u710A\u7CFB\u7EDF\\M4\\\u8F6F\u4EF6\u5F00\u53D1\\LaserIntelliWeldingSystem\\LaserIntelliWeldingSystem\\UI\\ParamAutoPage.cs [\u8BBE\u8BA1]",
-              "RelativeToolTip": "LaserIntelliWeldingSystem\\UI\\ParamAutoPage.cs [\u8BBE\u8BA1]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-14T08:04:52.723Z"
             }

@@ -28,7 +28,7 @@ namespace LaserIntelliWeldingSystem.PageUI
         UILineSeries series2;
         UILineSeries series3;
 
-        bool bobotDataRefresh, laserDataRefresh;
+        bool robotDataRefresh, laserDataRefresh;
 
         int ClinkTimes = 0;
         bool StartTest = false;
@@ -56,11 +56,12 @@ namespace LaserIntelliWeldingSystem.PageUI
 
             public void Clear()
             {
-                X.Clear(); Y.Clear();   
+                X.Clear(); Y.Clear();
             }
 
         }
 
+        //实施获取的数据
         ChartVar SeamWidth;
         ChartVar robotSpeed;
         ChartVar LaserPower;
@@ -193,30 +194,12 @@ namespace LaserIntelliWeldingSystem.PageUI
             option.Title.Text = "焊缝模型数据";
 
             series = option.AddSeries(new UILineSeries("轮廓"));
-            //series.Add(0, 5);
-            //series.Add(1, 5);
-            //series.Add(2, 5);
-            //series.Add(3, 5);
-            //series.Add(4, 5);
             series.Width = 8;
             //设置曲线显示最大点数，超过后自动清理
             series.SetMaxCount(5);
 
             //设置曲线平滑
             series.Smooth = true;
-
-            //series2 = option.AddSeries(new UILineSeries("识别", Color.Red, true));
-            //series2.Add(0, 5);
-            //series2.Add(1, 5);
-            //series2.Add(2, 5);
-            //series2.Add(3, 5);
-            //series2.Add(4, 5);
-
-            //series2.SetMaxCount(18);
-            //series2.DashStyle = System.Drawing.Drawing2D.DashStyle.Dash;
-            //series2.SymbolSize = 4;
-            //series2.SymbolLineWidth = 2;
-            //series2.SymbolColor = Color.Red;
 
             series3 = option.AddSeries(new UILineSeries("焊点", Color.Red, false));
             series3.Symbol = UILinePointSymbol.Circle;
@@ -311,11 +294,16 @@ namespace LaserIntelliWeldingSystem.PageUI
             GlobalCommData.PointsY = GlobalCommData.ReciveXdoc.GetXmlStrValue(Value, "PointY");
 
 
-            bobotDataRefresh = WeldProcess.Instance.mLaserSeamData.robotWeldData.SetPoints(GlobalCommData.Xpos, GlobalCommData.Ypos, GlobalCommData.Zpos, GlobalCommData.PointNum, GlobalCommData.PointsX, GlobalCommData.PointsY, GlobalCommData.WidthStartNum, GlobalCommData.WidthEndNum);
+            robotDataRefresh = WeldProcess.Instance.mLaserSeamData.robotWeldData.SetPoints(GlobalCommData.Xpos, GlobalCommData.Ypos, GlobalCommData.Zpos, GlobalCommData.PointNum, GlobalCommData.PointsX, GlobalCommData.PointsY, GlobalCommData.WidthStartNum, GlobalCommData.WidthEndNum);
             laserDataRefresh = WeldProcess.Instance.mLaserSeamData.laserWeldData.SetData(GlobalCommData.Speed, GlobalCommData.FeedSpeed, GlobalCommData.LaserPower);
             WeldProcess.Instance.WriteOnlineFile();
             FreshChartLine();
-
+            WeldProcess.Instance.AutoAction(GlobalCommData.mAutoParam, SeamWidth, true, 6);
+            if (WeldProcess.Instance.Trigger)
+            {
+                WeldProcess.Instance.Trigger = false;
+                GlobalCommData.ShowLog("AutoParamAction", string.Format("执行工艺参数调整！RobotX:{0}", WeldProcess.Instance.StartRobotX));
+            }
         }
 
         void FreshChartLine()
@@ -328,8 +316,8 @@ namespace LaserIntelliWeldingSystem.PageUI
             else
             {
 
-                if (bobotDataRefresh) AddContourLineChart();
-                if (bobotDataRefresh && laserDataRefresh) AddNewDataLineChart();
+                if (robotDataRefresh) AddContourLineChart();
+                if (robotDataRefresh && laserDataRefresh) AddNewDataLineChart();
             }
         }
 
